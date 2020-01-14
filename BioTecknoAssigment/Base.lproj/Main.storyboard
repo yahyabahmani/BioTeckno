@@ -96,10 +96,16 @@
                                     <action selector="closeButton:" destination="kDP-fC-UcB" eventType="touchUpInside" id="EU8-IF-rII"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pUe-Bl-rNZ">
+                                <rect key="frame" x="188.5" y="352.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="pUe-Bl-rNZ" firstAttribute="centerY" secondItem="3II-zD-Awu" secondAttribute="centerY" constant="-50" id="03Y-L9-3Af"/>
                             <constraint firstItem="lYE-Et-4w9" firstAttribute="bottom" secondItem="qYj-eT-bOE" secondAttribute="bottom" constant="93" id="7Xk-Gr-m4o"/>
+                            <constraint firstItem="pUe-Bl-rNZ" firstAttribute="centerX" secondItem="3II-zD-Awu" secondAttribute="centerX" id="LwH-NE-AuJ"/>
                             <constraint firstItem="2FH-OK-ufx" firstAttribute="leading" secondItem="lYE-Et-4w9" secondAttribute="leading" constant="18" id="Yo0-BX-SxW"/>
                             <constraint firstAttribute="trailing" secondItem="qYj-eT-bOE" secondAttribute="trailing" id="nyf-Ho-2Pq"/>
                             <constraint firstItem="2FH-OK-ufx" firstAttribute="top" secondItem="lYE-Et-4w9" secondAttribute="top" constant="18" id="oiC-BE-D79"/>
@@ -109,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="lYE-Et-4w9"/>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="pUe-Bl-rNZ" id="NTt-gT-3SU"/>
                         <outlet property="sliderCollectionView" destination="qYj-eT-bOE" id="Nik-za-1Mc"/>
                     </connections>
                 </viewController>

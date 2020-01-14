@@ -8,21 +8,15 @@
 
 import Foundation
 import UIKit
-class ImageModel {
 
-    var image:  [UIImage?]
-    
-    init(image:[UIImage?]) {
+class MediaModel {
+    var imageUrl :String?
+    var videoUrl:String?
+    init(videoUrl:String?,imageUrl:String?) {
+        self.videoUrl = videoUrl
+         self.imageUrl = imageUrl
         
-        self.image = image
-    }
+       }
     
-}
-class VideoModel {
 
-    var path = [""]
-    
-    init(path:[String]) {
-        self.path = path
-    }
 }

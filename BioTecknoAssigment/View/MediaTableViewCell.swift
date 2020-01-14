@@ -11,15 +11,25 @@ import UIKit
 class MediaTableViewCell: UITableViewCell {
     @IBOutlet weak var previewImageView: UIImageView!
 
+    @IBOutlet weak var playIcon: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         
     }
-    func fill(_ image:UIImage) {
-        self.previewImageView.image = image
+    func fill(_ name:String) {
+        guard let imageUrl = URL(string: name) else{return}
+       ImageLoader.image(for: imageUrl) { image in
+          self.previewImageView.image = image
+        }
+        self.playIcon.isHidden = true
 
+    }
+    func fillVideoType(image:UIImage?) {
+        self.previewImageView.image = image
+        self.playIcon.isHidden = false
+        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

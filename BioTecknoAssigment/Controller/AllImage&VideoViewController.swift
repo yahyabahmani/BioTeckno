@@ -13,17 +13,18 @@ import AVKit
 class AllImage_VideoViewController: UIViewController {
     @IBOutlet weak var tableMedia: UITableView!
     
-    var images :[UIImage?] = []
-    var videos = [""]
-   // var allImage:[ImageModel]?
+    //var images :[UIImage?] = []
+//    var videosUrl = [""]
+//    var imageUrl = [MediaViewModel]()
+//    var mediaViewModel = MediaViewModel()
+    var media = [MediaModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableMedia.register(UINib(nibName: "MediaTableViewCell", bundle: nil), forCellReuseIdentifier: "MediaTableViewCell")
-        let imageViewModel =  ImageViewModel()
-        self.images = imageViewModel.imageView
-        print("adadadadad ")
-        let videoViewModel = VideoViewModel()
-        self.videos = videoViewModel.pathVideo
+        
+        let media = MediaViewModel()
+        self.media = media.media
+           
         // Do any additional setup after loading the view.
     }
     func generateThumbnail(path: URL) -> UIImage? {
@@ -43,73 +44,44 @@ class AllImage_VideoViewController: UIViewController {
 }
 
 extension AllImage_VideoViewController:UITableViewDelegate,UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return (section == 0) ? "Image":"Video"
-    }
+ 
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? self.images.count: self.videos.count
+        return self.media.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 74
+        return 94
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "MediaTableViewCell") as! MediaTableViewCell
-        if indexPath.section == 0 {
-                   
-            if let section = self.images[indexPath.row] {
-            
-            cell.fill(section)
-            }
-            
-            return cell
-        }else{
-            
-            guard let path = Bundle.main.path(forResource: self.videos[indexPath.row], ofType:"mp4") else {
-                    debugPrint("video.m4v not found")
-                    return UITableViewCell()
-                }
-            
-            if let image =   self.generateThumbnail(path:  URL(fileURLWithPath: path)) {
+        
+        let segment = media[indexPath.row]
+        
+        if  let image = segment.imageUrl {
             cell.fill(image)
-            }
-            
-            
+            return cell
+        }else if let video = segment.videoUrl,let videoUrl = URL(string: video){
+            cell.fillVideoType(image: self.generateThumbnail(path: videoUrl))
+            return cell
         }
         
         
-        return cell
+
+        
+        
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if indexPath.section == 0 {
-            
-            self.performSegue(withIdentifier: "imageShow", sender: indexPath.row)
-            
-            
-        }else{
-            guard let path = Bundle.main.path(forResource: self.videos[indexPath.row], ofType:".mp4") else {
-                      debugPrint("video.m4v not found")
-                      return
-                  }
-                  let player = AVPlayer(url: URL(fileURLWithPath: path))
-                  let playerController = AVPlayerViewController()
-                  playerController.player = player
-                  present(playerController, animated: true) {
-                      player.play()
-                  }
-            
-        }
+                self.performSegue(withIdentifier: "imageShow", sender: indexPath.row)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "imageShow"{
             if let destination = segue.destination as? ImageSliderViewController , let sender = sender as? Int{
                 destination.selectIndex = sender
-                destination.allImage = self.images
+                destination.media = media
             }
             
         }

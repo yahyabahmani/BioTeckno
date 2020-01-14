@@ -19,20 +19,33 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-BJ-jES">
                         <rect key="frame" x="0.0" y="0.0" width="328" height="54"/>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ui" translatesAutoresizingMaskIntoConstraints="NO" id="QtZ-o7-r92">
+                        <rect key="frame" x="141.5" y="4.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="GA7-ut-zzA"/>
+                            <constraint firstAttribute="height" constant="45" id="tjg-ce-iSD"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="tbc-BJ-jES" secondAttribute="trailing" id="8pk-0j-osJ"/>
+                    <constraint firstItem="QtZ-o7-r92" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8w3-8M-jc4"/>
                     <constraint firstItem="tbc-BJ-jES" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B91-Lo-D7g"/>
                     <constraint firstAttribute="bottom" secondItem="tbc-BJ-jES" secondAttribute="bottom" id="RH2-2R-eCJ"/>
                     <constraint firstItem="tbc-BJ-jES" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zws-2n-rXN"/>
                     <constraint firstItem="tbc-BJ-jES" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kDm-Nb-8Wu"/>
+                    <constraint firstItem="QtZ-o7-r92" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tcZ-Mp-B2q"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="playIcon" destination="QtZ-o7-r92" id="OIs-gn-9R7"/>
                 <outlet property="previewImageView" destination="tbc-BJ-jES" id="XTX-46-qHf"/>
             </connections>
-            <point key="canvasLocation" x="142.02898550724638" y="147.32142857142856"/>
+            <point key="canvasLocation" x="140.57971014492756" y="145.98214285714286"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ui" width="512" height="512"/>
+    </resources>
 </document>
