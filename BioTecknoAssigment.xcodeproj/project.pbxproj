@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B099F5DCF28D2710041B51D /* Pods_BioTecknoAssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EC335FEB98505327AF11EC /* Pods_BioTecknoAssigmentTests.framework */; };
+		9B6FB84EBFFA5732C4481AC2 /* Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E2B8B67EFBA546CCF94002 /* Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework */; };
+		E3DCC97B805765FEC85A1E93 /* Pods_BioTecknoAssigment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB3891C0A0ADDF7152AEAE1 /* Pods_BioTecknoAssigment.framework */; };
 		FA078BDE23CDDCA8009FE509 /* ezgi2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA078BDD23CDDCA8009FE509 /* ezgi2.mp4 */; };
 		FA078BE023CDDCBB009FE509 /* ezgif.com.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA078BDF23CDDCBA009FE509 /* ezgif.com.mp4 */; };
 		FA078BE623CE50EE009FE509 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA078BE523CE50ED009FE509 /* ImageLoader.swift */; };
@@ -45,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14861B1CC4658795A7A5653E /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16BCEBF15847F2A38D7A4B37 /* Pods-BioTecknoAssigmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigmentTests.release.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigmentTests/Pods-BioTecknoAssigmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BB3891C0A0ADDF7152AEAE1 /* Pods_BioTecknoAssigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioTecknoAssigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9956CA3E43D68F3A68D44C /* Pods-BioTecknoAssigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigment.release.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigment/Pods-BioTecknoAssigment.release.xcconfig"; sourceTree = "<group>"; };
+		766432BACE8F5E49A9A372F2 /* Pods-BioTecknoAssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigmentTests/Pods-BioTecknoAssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7669F3D88E78D65C00EE2BE5 /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.release.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83E2B8B67EFBA546CCF94002 /* Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EC335FEB98505327AF11EC /* Pods_BioTecknoAssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioTecknoAssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B1840140F140130F5F465F /* Pods-BioTecknoAssigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioTecknoAssigment.debug.xcconfig"; path = "Target Support Files/Pods-BioTecknoAssigment/Pods-BioTecknoAssigment.debug.xcconfig"; sourceTree = "<group>"; };
 		FA078BDD23CDDCA8009FE509 /* ezgi2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = ezgi2.mp4; path = BioTecknoAssigment/Assets.xcassets/ezgi2.dataset/ezgi2.mp4; sourceTree = SOURCE_ROOT; };
 		FA078BDF23CDDCBA009FE509 /* ezgif.com.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = ezgif.com.mp4; path = BioTecknoAssigment/Assets.xcassets/ezgif.com.dataset/ezgif.com.mp4; sourceTree = SOURCE_ROOT; };
 		FA078BE523CE50ED009FE509 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DCC97B805765FEC85A1E93 /* Pods_BioTecknoAssigment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B099F5DCF28D2710041B51D /* Pods_BioTecknoAssigmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6FB84EBFFA5732C4481AC2 /* Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92CD1ED347FBF807375ED816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BB3891C0A0ADDF7152AEAE1 /* Pods_BioTecknoAssigment.framework */,
+				83E2B8B67EFBA546CCF94002 /* Pods_BioTecknoAssigment_BioTecknoAssigmentUITests.framework */,
+				A3EC335FEB98505327AF11EC /* Pods_BioTecknoAssigmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA61974623CD10FA00CCD449 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,8 @@
 				FA61976823CD10FB00CCD449 /* BioTecknoAssigmentTests */,
 				FA61977323CD10FB00CCD449 /* BioTecknoAssigmentUITests */,
 				FA61975023CD10FA00CCD449 /* Products */,
+				FA7528A148524771D7C01216 /* Pods */,
+				92CD1ED347FBF807375ED816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +197,20 @@
 			path = ImageSlider;
 			sourceTree = "<group>";
 		};
+		FA7528A148524771D7C01216 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1840140F140130F5F465F /* Pods-BioTecknoAssigment.debug.xcconfig */,
+				6E9956CA3E43D68F3A68D44C /* Pods-BioTecknoAssigment.release.xcconfig */,
+				14861B1CC4658795A7A5653E /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.debug.xcconfig */,
+				7669F3D88E78D65C00EE2BE5 /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.release.xcconfig */,
+				766432BACE8F5E49A9A372F2 /* Pods-BioTecknoAssigmentTests.debug.xcconfig */,
+				16BCEBF15847F2A38D7A4B37 /* Pods-BioTecknoAssigmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA97BACD23CDD245008C297D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA61977923CD10FB00CCD449 /* Build configuration list for PBXNativeTarget "BioTecknoAssigment" */;
 			buildPhases = (
+				6B05E335DC2A2BE454959EE9 /* [CP] Check Pods Manifest.lock */,
 				FA61974B23CD10FA00CCD449 /* Sources */,
 				FA61974C23CD10FA00CCD449 /* Frameworks */,
 				FA61974D23CD10FA00CCD449 /* Resources */,
+				750932FD0D5DE02120CCB577 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA61977C23CD10FB00CCD449 /* Build configuration list for PBXNativeTarget "BioTecknoAssigmentTests" */;
 			buildPhases = (
+				52C0BFAF4EA625EDE8E6A9AE /* [CP] Check Pods Manifest.lock */,
 				FA61976123CD10FB00CCD449 /* Sources */,
 				FA61976223CD10FB00CCD449 /* Frameworks */,
 				FA61976323CD10FB00CCD449 /* Resources */,
@@ -248,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA61977F23CD10FB00CCD449 /* Build configuration list for PBXNativeTarget "BioTecknoAssigmentUITests" */;
 			buildPhases = (
+				AE37BA86350EE34D594A1EB3 /* [CP] Check Pods Manifest.lock */,
 				FA61976C23CD10FB00CCD449 /* Sources */,
 				FA61976D23CD10FB00CCD449 /* Frameworks */,
 				FA61976E23CD10FB00CCD449 /* Resources */,
+				FBAE71AF12AB974DDEE1A6FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +381,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52C0BFAF4EA625EDE8E6A9AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioTecknoAssigmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B05E335DC2A2BE454959EE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioTecknoAssigment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		750932FD0D5DE02120CCB577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment/Pods-BioTecknoAssigment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment/Pods-BioTecknoAssigment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment/Pods-BioTecknoAssigment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE37BA86350EE34D594A1EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBAE71AF12AB974DDEE1A6FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests/Pods-BioTecknoAssigment-BioTecknoAssigmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA61974B23CD10FA00CCD449 /* Sources */ = {
@@ -520,6 +669,7 @@
 		};
 		FA61977A23CD10FB00CCD449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B1840140F140130F5F465F /* Pods-BioTecknoAssigment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +687,7 @@
 		};
 		FA61977B23CD10FB00CCD449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9956CA3E43D68F3A68D44C /* Pods-BioTecknoAssigment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +705,7 @@
 		};
 		FA61977D23CD10FB00CCD449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766432BACE8F5E49A9A372F2 /* Pods-BioTecknoAssigmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +727,7 @@
 		};
 		FA61977E23CD10FB00CCD449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16BCEBF15847F2A38D7A4B37 /* Pods-BioTecknoAssigmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +749,7 @@
 		};
 		FA61978023CD10FB00CCD449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14861B1CC4658795A7A5653E /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,6 +769,7 @@
 		};
 		FA61978123CD10FB00CCD449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7669F3D88E78D65C00EE2BE5 /* Pods-BioTecknoAssigment-BioTecknoAssigmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

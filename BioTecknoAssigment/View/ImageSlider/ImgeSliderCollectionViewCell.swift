@@ -8,7 +8,7 @@
 
 import UIKit
 import AVKit
-
+import Kingfisher
 class ImgeSliderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var playImageView: UIImageView!
     
@@ -22,10 +22,9 @@ class ImgeSliderCollectionViewCell: UICollectionViewCell {
     }
     func fill(media:MediaModel) {
         if let name = media.imageUrl {
-            guard let imageUrl = URL(string: name) else{return}
-            ImageLoader.image(for: imageUrl) { image in
-                self.sliderImageView.image = image
-            }
+            let url = URL(string: name)
+                  sliderImageView.kf.setImage(with: url)
+
             self.playImageView.isHidden = true
             
         }else if let video = media.videoUrl, let videoUrl = URL(string: video) {

@@ -1,0 +1,6 @@
+framework module Pods_BioTecknoAssigmentTests {
+  umbrella header "Pods-BioTecknoAssigmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

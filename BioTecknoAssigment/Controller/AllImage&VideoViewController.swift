@@ -12,11 +12,7 @@ import AVKit
 
 class AllImage_VideoViewController: UIViewController {
     @IBOutlet weak var tableMedia: UITableView!
-    
-    //var images :[UIImage?] = []
-//    var videosUrl = [""]
-//    var imageUrl = [MediaViewModel]()
-//    var mediaViewModel = MediaViewModel()
+
     var media = [MediaModel]()
     override func viewDidLoad() {
         super.viewDidLoad()

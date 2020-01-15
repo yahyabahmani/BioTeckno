@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class MediaTableViewCell: UITableViewCell {
     @IBOutlet weak var previewImageView: UIImageView!
 
@@ -19,10 +19,8 @@ class MediaTableViewCell: UITableViewCell {
         
     }
     func fill(_ name:String) {
-        guard let imageUrl = URL(string: name) else{return}
-       ImageLoader.image(for: imageUrl) { image in
-          self.previewImageView.image = image
-        }
+        let url = URL(string: name)
+        previewImageView.kf.setImage(with: url)
         self.playIcon.isHidden = true
 
     }
