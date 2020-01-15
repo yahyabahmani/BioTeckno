@@ -22,6 +22,8 @@ class ImageSliderViewController: UIViewController {
         self.sliderCollectionView.register(UINib(nibName: "ImgeSliderCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImgeSliderCollectionViewCell")
         self.indicator.isHidden = true
         
+        
+        
         // Do any additional setup after loading the view.
     }
 

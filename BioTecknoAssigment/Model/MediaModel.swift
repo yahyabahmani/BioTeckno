@@ -17,6 +17,4 @@ class MediaModel {
          self.imageUrl = imageUrl
         
        }
-    
-
 }
